@@ -1,0 +1,96 @@
+.current-location-button {
+  position: fixed;
+  bottom: 110px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(12, 150, 255);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-location-button i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.collect-waste-button {
+  position: fixed;
+  bottom: 35px;
+  left: 10px;
+  height: 40px;
+  background-color: rgb(32, 161, 0);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.collect-waste-button h3 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dustbin-list .view-btn {
+  position: fixed;
+  top: 120px;
+  right: 10px;
+}
+
+.machines-view-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.machines-view-list .btn {
+  background-color: #f9f9f9;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.direction-start {
+  position: fixed;
+  bottom: 60px;
+  background-color: #ffb700;
+  color: #fff;
+  left: 45%;
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.call-btn {
+  position: fixed;
+  bottom: 90px;
+  background-color: #1db000;
+  color: #fff;
+  border: none;
+  left: 15px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}

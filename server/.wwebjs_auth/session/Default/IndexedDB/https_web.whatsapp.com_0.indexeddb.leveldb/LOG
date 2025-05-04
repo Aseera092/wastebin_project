@@ -1,0 +1,59 @@
+2025/05/04-14:58:23.920 8f03 Reusing MANIFEST /Users/muhammedriyaskh/Documents/projects/wastebin_project/server/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/05/04-14:58:23.920 8f03 Recovering log #2697
+2025/05/04-14:58:23.934 8f03 Reusing old log /Users/muhammedriyaskh/Documents/projects/wastebin_project/server/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/002697.log 
+2025/05/04-14:58:25.855 1f503 Level-0 table #2722: started
+2025/05/04-14:58:25.862 1f503 Level-0 table #2722: 213481 bytes OK
+2025/05/04-14:58:25.866 1f503 Delete type=0 #2697
+2025/05/04-14:58:25.867 1f503 Manual compaction at level-0 from ' F\x01\x00\x00\x00' @ 72057594037927935 : 1 .. ' G\x01\x00\x00\x00' @ 0 : 0; will stop at ' F\x01\x00\x00\x05' @ 3491888 : 1
+2025/05/04-14:58:25.867 1f503 Compacting 1@0 + 0@1 files
+2025/05/04-14:58:25.872 1f503 Generated table #2723@0: 4590 keys, 91156 bytes
+2025/05/04-14:58:25.874 1f503 Generated table #2724@0: 196 keys, 11491 bytes
+2025/05/04-14:58:25.874 1f503 Compacted 1@0 + 0@1 files => 102647 bytes
+2025/05/04-14:58:25.879 1f503 compacted to: files[ 0 2 30 0 0 0 0 ]
+2025/05/04-14:58:25.880 1f503 Delete type=2 #2722
+2025/05/04-14:58:25.880 1f503 Manual compaction at level-0 from ' F\x01\x00\x00\x05' @ 3491888 : 1 .. ' G\x01\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/05/04-14:58:27.202 1f503 Compacting 1@1 + 9@2 files
+2025/05/04-14:58:27.271 1f503 Generated table #2725@1: 31872 keys, 2255519 bytes
+2025/05/04-14:58:27.327 1f503 Generated table #2726@1: 27569 keys, 2266529 bytes
+2025/05/04-14:58:27.366 1f503 Generated table #2727@1: 26270 keys, 2225525 bytes
+2025/05/04-14:58:27.387 1f503 Generated table #2728@1: 4979 keys, 2121187 bytes
+2025/05/04-14:58:27.422 1f503 Generated table #2729@1: 39851 keys, 2170181 bytes
+2025/05/04-14:58:27.483 1f503 Generated table #2730@1: 100853 keys, 2251019 bytes
+2025/05/04-14:58:27.543 1f503 Generated table #2731@1: 100990 keys, 2250844 bytes
+2025/05/04-14:58:27.604 1f503 Generated table #2732@1: 100775 keys, 2251721 bytes
+2025/05/04-14:58:27.654 1f503 Generated table #2733@1: 78618 keys, 1767600 bytes
+2025/05/04-14:58:27.654 1f503 Compacted 1@1 + 9@2 files => 19560125 bytes
+2025/05/04-14:58:27.660 1f503 compacted to: files[ 0 1 30 0 0 0 0 ]
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2701
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2702
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2703
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2707
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2706
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2704
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2705
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2708
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2709
+2025/05/04-14:58:27.661 1f503 Delete type=2 #2724
+2025/05/04-14:58:27.880 8a03 Compacting 1@1 + 9@2 files
+2025/05/04-14:58:27.949 8a03 Generated table #2734@1: 83262 keys, 2246062 bytes
+2025/05/04-14:58:27.993 8a03 Generated table #2735@1: 46040 keys, 2207603 bytes
+2025/05/04-14:58:28.017 8a03 Generated table #2736@1: 20195 keys, 2167894 bytes
+2025/05/04-14:58:28.030 8a03 Generated table #2737@1: 859 keys, 2129139 bytes
+2025/05/04-14:58:28.044 8a03 Generated table #2738@1: 1144 keys, 2141894 bytes
+2025/05/04-14:58:28.060 8a03 Generated table #2739@1: 1529 keys, 2142075 bytes
+2025/05/04-14:58:28.077 8a03 Generated table #2740@1: 2495 keys, 2148566 bytes
+2025/05/04-14:58:28.094 8a03 Generated table #2741@1: 2015 keys, 2148638 bytes
+2025/05/04-14:58:28.111 8a03 Generated table #2742@1: 2221 keys, 2150446 bytes
+2025/05/04-14:58:28.114 8a03 Generated table #2743@1: 27 keys, 21684 bytes
+2025/05/04-14:58:28.114 8a03 Compacted 1@1 + 9@2 files => 19504001 bytes
+2025/05/04-14:58:28.120 8a03 compacted to: files[ 0 0 31 0 0 0 0 ]
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2715
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2714
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2716
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2717
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2713
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2712
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2710
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2711
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2723
+2025/05/04-14:58:28.121 8a03 Delete type=2 #2718

@@ -40,7 +40,6 @@ const SIDEBARLIST = [
             }
         ]
     },
-    ,
     {
         title: 'Requests',
         link: '',
@@ -50,6 +49,22 @@ const SIDEBARLIST = [
             {
                 title: 'View Request',
                 link: '/dashboard/view-request'
+            }
+        ]
+    },
+    {
+        title: 'Settings',
+        link: '',
+        icon: 'fs-4 bi-gear-fill',
+        isExtendable: true,
+        child: [
+            {
+                title: 'Whatapp Settings',
+                link: '/dashboard/whatsapp-settings'
+            },
+            {
+                title: 'Notification Settings',
+                link: '/dashboard/notification-settings'
             }
         ]
     },

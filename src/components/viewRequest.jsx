@@ -72,8 +72,8 @@ const ViewallRequest = () => {
                                 return (
                                     <tr>
                                         <th scope="row">{ind + 1}</th>
-                                        <td>{`${data.users.firstName} ${data.users.lastName}`}</td>
-                                        <td>{data.users.mobileNo}</td>
+                                        <td>{data.users ? `${data.users.firstName} ${data.users.lastName}` : '-'}</td>
+                                        <td>{data.users ? data.users.mobileNo : '-'}</td>
                                         <td>{data.latitude}</td>
                                         <td>{data.longitude}</td>
                                         <td>

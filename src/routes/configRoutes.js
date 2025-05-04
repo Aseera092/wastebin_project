@@ -14,6 +14,8 @@ import UserRequest from "../components/request";
 import Signup from "../components/Signup";
 import ViewallRequest from "../components/viewRequest";
 import MapView from "../components/mapView";
+import WhatsappSettings from "../components/whatsapp-settings";
+import NotificationNumber from "../components/notificationNumber";
 
 export const routes = createBrowserRouter([
   {
@@ -77,6 +79,14 @@ export const routes = createBrowserRouter([
       {
         path: "view-request",
         element: <ViewallRequest />
+      },
+      {
+        path: "whatsapp-settings",
+        element: <WhatsappSettings />
+      },
+      {
+        path: "notification-settings",
+        element: <NotificationNumber />
       }
     ]
   }

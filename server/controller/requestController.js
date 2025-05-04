@@ -1,4 +1,7 @@
+const Machine = require('../model/machineModel');
 const Request = require('../model/requestModel');
+const User = require('../model/userModel');
+const client = require('../util/whatsapp-web');
 
 const AddRequest = async (req, res, next) => {
     try {
@@ -62,6 +65,12 @@ const getRequestById = async (req, res, next) => {
 const updateRequestStatus = async (req, res, next) => {
     try {
         const requests = await Request.findByIdAndUpdate(req.params.id,req.body,{new:true});
+        const user = await User.findById(requests.users)
+        const response = await client.sendMessage(`91${
+            user.mobileNo
+        }@c.us`, `Hello ${user.firstName}, your Waste Collect Request status has been ${req.body.status}.`);
+        console.log('Message sent:', response);
+
         console.log(req.body);
         
         if (!requests) {

@@ -51,3 +51,36 @@ export const updateRequestStatus = async (id,data) => {
     })
     return response.json();
 }
+
+
+//whatsap connect
+
+export const getQrCode = async () => {
+    const response = await fetch(`${SERVICE_URL}qr-code`,{
+        method: "GET",
+    })
+    return response.json();
+}
+
+export const getWhatsappStatus = async () => {
+    const response = await fetch(`${SERVICE_URL}whatsapp-status`,{
+        method: "GET",
+    })
+    return response.json();
+}
+
+export const getSettings = async () => {
+    const response = await fetch(`${SERVICE_URL}get-settings`,{
+        method: "GET",
+    })
+    return response.json();
+}
+
+export const updateSettings = async (data) => {
+    const response = await fetch(`${SERVICE_URL}update-settings`,{
+        headers: { "Content-Type": "application/json" },
+        method: "PUT",
+        body: JSON.stringify(data)
+    })
+    return response.json();
+}

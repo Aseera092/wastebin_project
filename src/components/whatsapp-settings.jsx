@@ -13,10 +13,29 @@ const WhatsappSettings = () => {
   const [client, setClient] = useState();
 
   useEffect(() => {
+    var ws = null;
     getQrCode()
       .then((res) => {
         if (res.status) {
           setQrCode(res.data);
+          ws = setInterval(() => {
+            getWhatsappStatus()
+              .then((res) => {
+                if (res.status) {
+                  setAlreadyConnected(true);
+                  console.log("Client already authenticated:", res.client);
+                  setClient(res.client);
+                  clearInterval(ws);
+                } else {
+                  setAlreadyConnected(false);
+                }
+              })
+              .catch((error) => {
+                console.error("Error fetching WhatsApp status:", error);
+                toast.error("Error fetching WhatsApp status");
+              });
+            },10000); // Check every 10 seconds
+            
         } 
         if (res.status === false && res.client) {
           setAlreadyConnected(true);
@@ -28,26 +47,12 @@ const WhatsappSettings = () => {
         console.error("Error fetching QR code:", error);
         toast.error("Error fetching QR code");
       });
-
-      const ws = setInterval(() => {
-        getWhatsappStatus()
-          .then((res) => {
-            if (res.status) {
-              setAlreadyConnected(true);
-              console.log("Client already authenticated:", res.client);
-              setClient(res.client);
-              clearInterval(ws);
-            } else {
-              setAlreadyConnected(false);
-            }
-          })
-          .catch((error) => {
-            console.error("Error fetching WhatsApp status:", error);
-            toast.error("Error fetching WhatsApp status");
-          });
-      }
-      , 10000); // Check every 10 seconds
-      return () => clearInterval(ws); // Cleanup interval on component unmount
+ // Check every 10 seconds
+      return () => {
+        if (ws) {
+          clearInterval(ws);
+        }
+       } // Cleanup interval on component unmount
   },[]);
 
   return (
@@ -60,7 +65,7 @@ const WhatsappSettings = () => {
             <p>Scan this QR code with your WhatsApp app to connect.</p>
           </div>
         )}
-        {!qrCode || !alreadyConnected (
+        {!qrCode && !alreadyConnected && (
           <div className="d-flex flex-column align-items-center">
             <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
